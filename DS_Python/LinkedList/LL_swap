@@ -1,0 +1,8 @@
+def swap(self,x,y):
+        a=self.head
+        while(a):
+            if a.data==x:
+                a.data=y
+            elif a.data==y:
+                a.data=x
+            a=a.next    

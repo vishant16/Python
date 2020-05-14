@@ -1,0 +1,33 @@
+#Linked List Traversal
+
+class Node:
+    def __init__(self,data):
+        self.data=data #assign data
+        self.next=None #next node as Null
+
+class LL:
+    
+    def __init__(self):
+        self.head=None
+        
+    def printlist(self):
+        a=self.head
+        while(a):
+            print(a.data)
+            a=a.next
+  
+    def pushEnd(self,newnode):
+        n=Node(newnode)
+        if self.head is None:
+            self.head=n
+            return
+        last=self.head
+        while(last.next):
+            last=last.next
+        last.next=n    
+        
+a=LL()
+a.pushEnd(3)
+a.pushEnd(4)
+a.pushEnd(44)
+a.printlist()        

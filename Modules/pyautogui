@@ -1,0 +1,8 @@
+
+#screen dimensions
+import pyautogui
+print(pyautogui.size())
+
+
+#pressing ctrl+a
+pyautogui.hotkey("ctrlleft", "a") 

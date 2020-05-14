@@ -1,0 +1,35 @@
+new is invoked before init
+new->init->str
+
+Method Overriding
+If subclass (child class) has the same method as declared in the parent class
+
+Method Overloading
+if same method name in class with different signatures
+
+Duck Typing
+we focus on present of methods rather than types.
+
+To call parent init method
+super().__init__(self)-
+
+INHERITANCE
+- single
+- multiple
+- multilevel
+
+POLYMORPHISM
+- it allows us to define methods in the child class with the same name as defined in their parent class.
+- Method Overriding
+- len("string") or len([1,2,3])
+- we can use with inheritance
+
+Encapsulation
+- it acts as protective layer which put restriction to access the data by access modifier
+- it can be achieved through protected and protected
+- it provides security by hiding the data from the outside world.
+
+Abstraction is the property by virtue of which only the essential details are displayed to the user, implementation pasrt is hidden
+
+ str() vs repr
+ both are used for the string representation

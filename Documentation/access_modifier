@@ -1,0 +1,6 @@
+public
+  x=2
+protected- accessible to subclasses,class
+  _x=2
+private -accessible within class but cannot accessible to subclass
+  __x=2

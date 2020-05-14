@@ -1,0 +1,9 @@
+def duplication(self):
+        a=self.head
+        while(a.next is not None):
+            if a.data==a.next.data: # if finds duplicates remove it and again check with same node with other nodes
+                c=a.next.next
+                a.next=None
+                a.next=c
+            else:                     #if not duplicates change the node
+                a=a.next

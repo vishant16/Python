@@ -1,0 +1,8 @@
+def frequency(self,i):
+     a=self.head
+     count=0
+     while(a):
+         if a.data==i:
+             count+=1
+         a=a.next
+     return count  

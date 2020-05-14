@@ -1,0 +1,19 @@
+Module- it contains python definition and statements same as library
+
+Import-
+  if we want any python source file as a module
+  import filename
+  when interpreter encounter import is searches that modules in search path(list of directories)
+
+
+Module1.py
+def add(x,y):
+    return x+y
+
+Module2.py
+
+import module1
+print(module1.add(2,13))
+
+
+

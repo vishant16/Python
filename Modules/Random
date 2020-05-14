@@ -1,0 +1,15 @@
+Choice return only 1 return number
+
+import random
+print(random.choice([2323,4,3,5,423,4]))
+
+#selecting from range 1 to 10 skipping 2 elements
+print(random.randrange(1,10,2))
+
+
+#selecting floating point random number
+print(random.uniform(1,10))
+
+
+#changing elements positions
+random.shuffle(list)

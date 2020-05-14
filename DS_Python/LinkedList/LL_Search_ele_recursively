@@ -1,0 +1,7 @@
+def SearchRec(self,l,k):
+        
+        if not l:
+            return False
+        if l.data==k:
+            return True
+        return self.SearchRec(l.next,k)   

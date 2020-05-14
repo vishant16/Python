@@ -1,0 +1,29 @@
+ 
+    def breakrev(self,n):
+        
+        #breaking 1st half
+        a=self.head
+        i=1
+        
+        while(i<n):
+            a=a.next    
+            i+=1
+        sec=a.next
+        a.next=None
+        
+        #reversing broken LL
+        prev=None
+        curr=self.head
+        while(curr!=None):
+            next=curr.next
+            curr.next=prev
+            prev=curr
+            curr=next
+        self.head=prev    
+        
+        
+        
+        curr=self.head
+        while(curr.next!=None):
+            curr=curr.next
+        curr.next=sec    

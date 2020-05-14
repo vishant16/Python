@@ -1,0 +1,67 @@
+Binary Tree
+it is hierarical data structure with different types of node parent, child and leaves
+a tree whose element has atmost 2 children
+appliation- file system in computer
+
+SEARCH
+LL<BT<<ARR
+
+INSERTION/DELETION
+quicker than array and slow than unordered LL
+
+
+PROPERTIES
+
+1. max no of nodes in level l=2^(l-1)-1
+2. max of nodes of height h=2^(h-1)-1
+    height means from root to deepest leave
+3. n nodes
+    level=logN+1(atleast)
+4 Leaf Node=Internal Node+1    
+
+
+
+TYPES
+
+1. FULL BINARY TREE:
+    tree with 0/2 children
+    Leaf_node=Internal_Node+1
+    
+               18
+            /     \  
+          40       30  
+                   /  \
+                 100   40
+    
+2. COMPLETE BINARY TREE
+    all levels are completely filled with left node is partially filled
+                     18
+                    /  \      
+                   30   20
+                  /  
+                100   
+
+3. PERFECT BINARY TREE
+    all internal nodes are having 2 children with same level 
+    
+              18
+            /     \  
+          40       30
+
+4. DEGENERATE TREE
+    internal node having single node
+      10
+      /
+    20
+     \
+     30
+      \
+      40
+
+
+ENUMERATION OF BINARY TREE
+  
+  BT with labeled node or unabled nodes
+  Number of Labeled Tees = (Number of unlabeled trees) * n!
+   
+   

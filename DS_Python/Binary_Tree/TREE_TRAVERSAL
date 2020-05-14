@@ -1,0 +1,9 @@
+Breadth first traversal-
+  Level Order
+Depth first traversal
+  Inorder- Left_Root_Right
+  Preorder- Root_Left_Right
+  Postorder- Left_Right_Root
+  
+All traversals requires O(n) TC  
+  

@@ -1,0 +1,6 @@
+pprint is preety preinter, displays items in more readable way
+
+
+from pprint import pprint
+
+pprint(anything)

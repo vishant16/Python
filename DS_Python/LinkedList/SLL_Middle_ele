@@ -1,0 +1,13 @@
+def Middle(self):
+     a=self.head
+     count=0
+     while(a):
+         count+=1
+         a=a.next
+     k=count//2
+     j=0
+     a1=self.head
+     while(a1):
+         if j==k:
+             return a1.data
+         j+=1

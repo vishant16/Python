@@ -1,0 +1,7 @@
+ def Search(self,S):
+        k=self.head
+        while(k):
+            if k.data==S:
+                return True
+            k=k.next
+        return False   

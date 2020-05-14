@@ -1,0 +1,5 @@
+def DelLL(self):
+        a=self.head
+        while(a):
+            del a.data
+            a=a.next

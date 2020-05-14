@@ -1,0 +1,26 @@
+#Linked List Traversal
+
+class Node:
+    def __init__(self,data):
+        self.data=data #assign data
+        self.next=None #next node as Null
+
+class LL:
+    
+    def __init__(self):
+        self.head=None
+        
+    def printlist(self):
+        a=self.head
+        while(a):
+            print(a.data)
+            a=a.next
+
+a=LL()
+a.head=Node(14)        
+b=Node(12)
+c=Node(12)
+
+a.head.next=b
+b.next=c
+a.printlist()        

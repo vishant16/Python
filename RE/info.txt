@@ -1,0 +1,9 @@
+\d=[0-9]
+\d+=[0-9].......
+\D=~\d
+\s=space
+\w=[a-zA-Z0-9] alphanumeric
+\W-non alphanumeric characters
+[0-9]{3}=[0-9][0-9][0-9]
+^=start with
+$=end with

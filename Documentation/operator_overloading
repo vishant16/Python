@@ -1,0 +1,10 @@
+Operator Overloading
+
+  When operators are used for different purposes like + to add integer or + to concatenate, it is overloaded b int and str class.
+
+  Magic functions are used to define overloaded behaviour of predefined operator like +,
+  they are not invoked directly, invocation happens by writing inside class.
+  dir(int)- shows all magic functions.
+  10+2, + automatically calls __add__.
+
+  During object creation, they are called automatically

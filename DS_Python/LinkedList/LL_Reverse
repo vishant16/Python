@@ -1,0 +1,9 @@
+def rev(self):
+        p=None
+        a=self.head
+        while(a!=None):
+            next=a.next
+            a.next=p
+            p=a
+            a=next
+        self.head=p 

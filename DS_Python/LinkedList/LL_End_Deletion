@@ -1,0 +1,62 @@
+#Linked List Traversal#initalize node object
+class Node:
+    def __init__(self,data):
+        self.data=data #assign data
+        self.next=None #next node as Null
+
+#initialize LL object
+class LL:
+    
+    def __init__(self):
+        self.head=None
+        
+    def printlist(self):
+        a=self.head
+        while(a):
+            print(a.data)
+            a=a.next
+  
+    #Addition at front
+    def push(self,newnode):
+        n=Node(newnode)
+        if self.head is None:
+            self.head=n
+            return
+        n.next=self.head
+        self.head=n
+        
+        
+    def pushMiddle(self,newnode,prev):
+        n=Node(newnode)
+        if prev is None:
+            return
+        n.next=prev.next
+        prev.next=n
+        
+        
+    def DeletionEnd(self):
+        a=self.head
+        while(a.next.next!=None):
+            a=a.next
+        a.next=None
+        
+        
+        
+        
+if __name__=='__main__':
+    a=LL()
+    a.push(3)
+    a.push(4)
+    a.push(44)
+    a.push(3434)
+    a.pushMiddle(16,a.head.next)
+    a.printlist()
+    print("After deletion :")
+    a.DeletionEnd()
+    a.printlist() 
+    print("After deletion :")
+    a.DeletionEnd()
+    a.printlist() 
+    print("After deletion :")
+    a.DeletionEnd()
+    a.printlist()     
